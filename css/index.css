@@ -1,3 +1,65 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
-
+            /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+            
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+                border: 0px solid red;
+            }
+            
+            html,
+            body {
+                height: 100%;
+                font-family: 'Titillium Web', sans-serif;
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+            
+            h1,
+            h2,
+            h3,
+            h4,
+            h5 {
+                font-family: 'Bangers', cursive;
+                letter-spacing: 1px;
+                margin-bottom: 15px;
+            }
+            
+            #header {
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            nav {
+                border: 2px solid rgb(255, 217, 0);
+                display: flex;
+                justify-content: space-evenly;
+            }
+            
+            nav a {
+                border: 2px solid rgb(255, 192, 253);
+            }
+            
+            #content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+            }
+            
+            .top {
+                display: flex;
+                justify-content: space-around;
+                max-width: 100%;
+            }
+            
+            .bottom {
+                display: flex;
+            }
