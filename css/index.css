@@ -1,65 +1,149 @@
-            /* http://meyerweb.com/eric/tools/css/reset/ 
+                                /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-            
-            * {
-                box-sizing: border-box;
-                padding: 0;
-                margin: 0;
-                max-width: 100%;
-                border: 0px solid red;
-            }
-            
-            html,
-            body {
-                height: 100%;
-                font-family: 'Titillium Web', sans-serif;
-                width: 90%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-            }
-            
-            h1,
-            h2,
-            h3,
-            h4,
-            h5 {
-                font-family: 'Bangers', cursive;
-                letter-spacing: 1px;
-                margin-bottom: 15px;
-            }
-            
-            #header {
-                display: flex;
-                justify-content: space-around;
-            }
-            
-            nav {
-                border: 2px solid rgb(255, 217, 0);
-                display: flex;
-                justify-content: space-evenly;
-            }
-            
-            nav a {
-                border: 2px solid rgb(255, 192, 253);
-            }
-            
-            #content {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 90%;
-            }
-            
-            .top {
-                display: flex;
-                justify-content: space-around;
-                max-width: 100%;
-            }
-            
-            .bottom {
-                display: flex;
-            }
+                                /* hi */
+                                
+                                * {
+                                    box-sizing: border-box;
+                                    padding: 0;
+                                    margin: 0;
+                                    max-width: 100%;
+                                    border: 0px solid red;
+                                }
+                                
+                                html,
+                                body {
+                                    height: 200%;
+                                    font-family: 'Titillium Web', sans-serif;
+                                    width: 90%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-around;
+                                    align-items: center;
+                                }
+                                
+                                h1,
+                                h2,
+                                h3,
+                                h4,
+                                h5 {
+                                    font-family: 'Bangers', cursive;
+                                    letter-spacing: 1px;
+                                    margin-bottom: 15px;
+                                }
+                                
+                                #header {
+                                    display: flex;
+                                    justify-content: space-around;
+                                    width: 80%;
+                                }
+                                
+                                nav {
+                                    display: flex;
+                                    justify-content: space-evenly;
+                                    width: 80%;
+                                }
+                                
+                                #tip {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    flex-direction: row;
+                                    width: 80%;
+                                }
+                                
+                                button {
+                                    font-size: 100%;
+                                    border: 1px solid black;
+                                }
+                                
+                                .title {
+                                    text-align: center;
+                                    font-size: 250%;
+                                    margin: 2%
+                                }
+                                
+                                .topimg {
+                                    margin: 2%;
+                                }
+                                
+                                .middle-img {
+                                    width: 100%;
+                                    margin: 2%
+                                }
+                                
+                                nav a {
+                                    text-decoration: none;
+                                    text-color: black;
+                                }
+                                
+                                #content {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    width: 80%;
+                                    border-bottom: 1px solid black;
+                                }
+                                
+                                .top {
+                                    border-top: 1px solid black;
+                                    display: flex;
+                                    width: 100%;
+                                }
+                                
+                                .top div {
+                                    margin: 2%;
+                                }
+                                
+                                .bottom {
+                                    display: flex;
+                                    border: 1 px solid black;
+                                }
+                                
+                                .bottom div {
+                                    margin: 2%;
+                                }
+                                
+                                footer {
+                                    margin: 2%;
+                                    width: 80%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                }
+                                /*** tablet ****/
+                                
+                                @media (max-width: 800px) {
+                                    .topimg {
+                                        display: none;
+                                    }
+                                    #header {
+                                        display: flex;
+                                        flex-direction: column-reverse;
+                                        width: 150%;
+                                        align-items: center;
+                                    }
+                                }
+                                /*mobile*/
+                                
+                                @media (max-width: 500px) {
+                                    nav {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                    }
+                                    nav a {
+                                        border-top: 1px solid grey;
+                                        width: 100%;
+                                        text-align: center;
+                                    }
+                                    .top {
+                                        display: flex;
+                                        flex-direction: column;
+                                    }
+                                    .bottom {
+                                        display: flex;
+                                        flex-direction: column;
+                                    }
+                                }
